@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'FuturaCondensedExtraBold';
+  src: url('/fonts/FuturaCondensedExtraBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('/fonts/Helvetica.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaBold';
+  src: url('/fonts/HelveticaBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TradeGothic';
+  src: url('/fonts/TradeGothic.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TradeGothicBold';
+  src: url('/fonts/TradeGothicBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.link-with-bar::before {
+  content: "|";
+  margin: 0 0.8rem;
+  color: #848484;
+}
+
+.link-with-bar:first-child::before {
+  content: "";
+  margin: 0;
+}
+
+/*
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} */
